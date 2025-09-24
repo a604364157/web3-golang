@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func AddTen(i *int) {
+func addTen(i *int) {
 	*i += 10
 }
 
@@ -13,6 +13,6 @@ func AddTen(i *int) {
 func main() {
 	i := 10
 	fmt.Println(i)
-	AddTen(&i)
+	addTen(&i)
 	fmt.Println(i)
 }
